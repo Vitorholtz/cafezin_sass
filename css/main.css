@@ -32,7 +32,7 @@ body, html {
           box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.11);
 }
 
-.menu-wrap {
+.nav .menu-wrap {
   max-width: 1366px;
   margin: auto;
   display: -webkit-box;
@@ -47,13 +47,13 @@ body, html {
   padding: 1rem;
 }
 
-.logo {
+.nav .menu-wrap .logo {
   font-size: 2rem;
   font-weight: 800;
   color: #6a2e23;
 }
 
-.menu {
+.nav .menu-wrap .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +65,7 @@ body, html {
           align-items: center;
 }
 
-.menu-item {
+.nav .menu-wrap .menu .menu-item {
   margin-left: 1rem;
   padding: .5rem 1.5rem;
   font-weight: 300;
@@ -75,13 +75,19 @@ body, html {
   cursor: pointer;
 }
 
-.menu-item:hover, .menu-item.active {
+.nav .menu-wrap .menu .menu-item:hover {
   color: white;
   border-radius: 50px;
   background-color: #4d6277;
 }
 
-.cart-bnt {
+.nav .menu-wrap .menu .active {
+  color: white;
+  border-radius: 50px;
+  background-color: #4d6277;
+}
+
+.nav .menu-wrap .cart-bnt {
   width: 3rem;
   height: 3rem;
   display: -webkit-box;
@@ -100,7 +106,7 @@ body, html {
   transition: .3 ease-in-out;
 }
 
-.cart-bnt:hover {
+.nav .menu-wrap .cart-bnt:hover {
   color: green;
 }
 
